@@ -39,7 +39,7 @@ const Header = () => {
             {isMobileMenuOpen && 
                     <nav className="flex-col gap-4">
                         <Link to={"/admin"} className="text-white text-sm uppercase font-bold block py-2 pl-2 hover:bg-indigo-500 ">Pacientes</Link>
-                        <Link to={"/admin"} className="text-white text-sm uppercase font-bold block py-2 pl-2 hover:bg-indigo-500">Perfil</Link>
+                        <Link to={"/admin/perfil"} className="text-white text-sm uppercase font-bold block py-2 pl-2 hover:bg-indigo-500">Perfil</Link>
                         <button type="button"
                          className="text-white text-sm font-bold block w-full py-2 pl-2 text-left hover:bg-indigo-500 uppercase"
                          onClick={cerrarSesion}
