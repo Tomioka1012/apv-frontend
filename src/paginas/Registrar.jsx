@@ -39,7 +39,7 @@ const Registrar = () => {
             
             await clienteAxios.post(`/veterinarios`,{nombre, email, password});
             //NO OLVIDAR PONER UN SETTIMEOUT PARA EL MENSAJE
-            setAlerta({msg:'Cuenta creada correctamente, revisa tu email', error: false});
+            setAlerta({msg:'Cuenta creada correctamente, revisa tu email (spam)', error: false});
         } catch (error) {
             setAlerta({msg: error.response.data.msg, error:true});
         }
